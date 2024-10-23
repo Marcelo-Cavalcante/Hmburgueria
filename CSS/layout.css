@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+</style>
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    width: 100%;
+    height: 120px;
+    background-color: #630707;
+    }
+
+    
+    nav.menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        position: absolute;
+        top: 20px;
+        height: 100px;
+        
+    }
+
+    nav.menu li a {
+        padding: 10px;
+        text-decoration: none;
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        height: 300px;
+        color: white;
+    }
+
+
+#logo {
+        padding: 10px 70px;
+        width: 30%;
+    }
+
+.conteiner {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+   align-items: center;
+    justify-content: space-between;
+    
+    background-color: #2e0303;
+}
+
+#textprincipal h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: white;
+    padding-left: 150px;
+}
+
+#textprincipal h3 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    padding-left: 150px;
+}
+
+#burg {
+    max-width: 100%;
+    height: auto;
+    padding-right: 50px;
+}
+
+
+
+main {
+    display: block;
+    flex-direction: column;
+}
+
+.pacote1 {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+ .pacote1 img {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+ }
+
+.pacote2 {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.pacote2 img {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+ }
+
+
+.combo{
+    justify-content: center;
+    padding: 20px;
+    width: 33.33%;
+}
+
+.pacote1 p{
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+}
+
+.pacote2 p{
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+}
+
+hr {
+    background-color: #630707;
+    width: 70%;
+    margin: 30px auto;
+    height: 5px;
+  }
+
+#banner {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;    
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color:#630707;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+  }
+
+  footer p {
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+  }
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 200px;
+
+}
+
+.redesociais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  @media (max-width: 768px) {
+    header {
+      height: auto;
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 480px) {
+        #box1 h1 {
+          font-size: 50px; /* Reduzindo ainda mais para telas menores */
+        }
+      
+        #banner, #banner2 {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        #banner img {
+          height: 200px; /* Imagem menor para se ajustar melhor */
+        }
+      
+        #texto h2 {
+          font-size: 35px; /* Tamanho do texto principal mais ajustado */
+          padding-left: 20px;
+        }
+      
+        #texto h3 {
+          font-size: 20px;
+          padding-left: 20px;
+        }
+      
+        /* Ajustes no footer para centralizar o conteúdo e evitar que fique espremido */
+        footer p {
+          font-size: 15px;
+        }
+      
+        /* Ajustando o layout de produtos para melhorar a visualização */
+        #prod1 img, #prod2 img {
+          height: 100px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        #box2 nav ul {
+          flex-direction: column;
+        }
+      
+        #box2 nav ul li {
+          margin: 10px 0;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        #box2 nav ul {
+          flex-direction: column;
+        }
+      
+        #box2 nav ul li {
+          margin: 6px 0;
+        }
+      }
